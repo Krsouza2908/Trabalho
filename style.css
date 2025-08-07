@@ -2,6 +2,8 @@
     margin: 0%;
     padding: 0%;
     padding-top: 5px;
+    text-align: center;
+    font-size: x-large;
 }
 
 a{
@@ -9,11 +11,7 @@ a{
     color: black;
 }
 
-#principal body{
-    background-image: image(pilares.jpg);
-}
-
-#principal nav a{
+ nav a{
     padding: 10px;
     background-color: #ddd;
     border: 1px solid black ;
@@ -22,31 +20,28 @@ a{
 
 #principal nav a:hover{
     background-color: #ccc;
-
-}
-#principal{
-    text-align: center;
-    font-size: x-large;
 }
 
 #principal header{
     padding-bottom: 50px;
 }
 
-#principal main{
-    width: 600px;
-    height: 700px;
+main{
+    width: 900px;
+    height: 100%;
     background-color: #ccc;
     margin: auto;
     padding: 30px;
     border-radius: 15px;
 }
+
 #principal li{
     margin: 10px;
 }
 
-#principal main  p{
+main  p{
     padding: 10px;
+    margin: 10px;
 }
 
 #principal footer{
@@ -59,4 +54,8 @@ a{
       text-align: center;
       padding: 10px;
       font-family: Arial, sans-serif;
+}
+
+header{
+    padding-bottom: 30px;
 }
