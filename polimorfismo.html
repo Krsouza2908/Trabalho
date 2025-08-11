@@ -17,5 +17,40 @@
         <a href="index.html">Página Inicial</a>
     </nav>
     </header>
+    <main>
+        <h1>Polimorfismo na Programação Orientada a Objetos</h1>
+
+    <p>
+        O <strong>polimorfismo</strong> é um dos pilares essenciais da Programação Orientada a Objetos (POO) e refere-se à capacidade que diferentes objetos têm de responder de maneira distinta a uma mesma mensagem ou método. Em outras palavras, polimorfismo significa "muitas formas", onde uma única interface pode representar diferentes tipos de objetos, cada um com sua própria implementação específica de um método.
+    </p>
+
+    <p>
+        Imagine que temos uma classe base chamada <code>Animal</code>, que possui um método chamado <code>emitirSom()</code>. As subclasses, como <code>Cachorro</code> e <code>Gato</code>, herdam esse método, mas cada uma implementa de uma forma diferente: o <code>Cachorro</code> pode emitir um latido, enquanto o <code>Gato</code> pode miar. O polimorfismo permite que, ao chamar <code>emitirSom()</code> em um objeto do tipo <code>Animal</code>, o programa execute a versão correta do método, dependendo da classe real do objeto.
+    </p>
+
+    <p>
+        Esse comportamento é fundamental para a flexibilidade e extensibilidade dos sistemas orientados a objetos. Por exemplo, é possível criar uma lista de objetos do tipo <code>Animal</code> que contenha instâncias de diferentes subclasses. Ao iterar por essa lista e chamar <code>emitirSom()</code> em cada objeto, cada animal responderá com seu som característico, mesmo que o código esteja chamando o método da mesma forma para todos.
+    </p>
+
+    <p>
+        Existem dois principais tipos de polimorfismo:
+    </p>
+    <ul>
+        <li><strong>Polimorfismo de tempo de compilação (estático):</strong> Também conhecido como sobrecarga de métodos, onde várias funções possuem o mesmo nome, mas diferentes assinaturas (parâmetros).</li>
+        <li><strong>Polimorfismo de tempo de execução (dinâmico):</strong> É o mais comum em POO e ocorre quando uma chamada a um método é resolvida no momento da execução, permitindo que a implementação correta seja escolhida conforme o tipo real do objeto.</li>
+    </ul>
+
+    <p>
+        Em linguagens como Java e C#, o polimorfismo de tempo de execução é implementado usando métodos virtuais (com a palavra-chave <code>virtual</code> ou <code>override</code>). Em Python, toda chamada de método é dinamicamente resolvida, facilitando o polimorfismo. Isso torna possível, por exemplo, criar códigos altamente genéricos que funcionam com múltiplos tipos diferentes, desde que eles implementem a interface esperada.
+    </p>
+
+    <p>
+        O polimorfismo está intimamente ligado ao conceito de <strong>herança</strong> e ao uso de <strong>interfaces</strong> ou <strong>classes abstratas</strong>. Ele permite que programas sejam escritos de forma mais limpa e mantenham uma estrutura flexível, onde novos tipos podem ser adicionados com pouco impacto no código existente.
+    </p>
+
+    <p>
+        Em resumo, o polimorfismo é uma característica poderosa da POO que permite tratar objetos de diferentes classes derivadas de maneira uniforme, ao mesmo tempo que respeita as diferenças específicas de cada tipo. Isso promove a criação de sistemas modulares, reutilizáveis e mais fáceis de manter.
+    </p>
+    </main>
 </body>
 </html>

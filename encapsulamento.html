@@ -17,5 +17,32 @@
         <a href="index.html">Página Inicial</a>
     </nav>
     </header>
+    <main>
+        <h1>Encapsulamento na Programação Orientada a Objetos</h1>
+
+    <p>
+        O <strong>encapsulamento</strong> é um dos quatro pilares fundamentais da Programação Orientada a Objetos (POO), junto com herança, polimorfismo e abstração. Ele consiste em esconder os detalhes internos do funcionamento de um objeto, expondo apenas o que for necessário através de interfaces bem definidas. Em outras palavras, encapsular significa proteger os dados do objeto e controlar o acesso a eles por meio de métodos, garantindo segurança, organização e integridade das informações.
+    </p>
+
+    <p>
+        Um bom exemplo de encapsulamento é o funcionamento de um controle remoto. Como usuário, você interage com os botões, mas não precisa saber como os sinais são enviados para a televisão internamente. Na POO, esse mesmo princípio se aplica: os atributos (variáveis) de uma classe são geralmente marcados como <code>privados</code>, impedindo que sejam acessados diretamente de fora da classe. Em vez disso, são fornecidos métodos públicos chamados <em>getters</em> e <em>setters</em> para ler e modificar esses valores, com regras e validações, se necessário.
+    </p>
+
+    <p>
+        Considere uma classe chamada <code>ContaBancaria</code>. Seus atributos como <code>saldo</code> e <code>senha</code> não devem ser acessados diretamente. Se alguém pudesse alterar o saldo de uma conta livremente, o sistema seria inseguro. Com o encapsulamento, você pode proteger esses dados e garantir que só sejam modificados por métodos que aplicam regras, como <code>depositar(valor)</code> ou <code>sacar(valor)</code>. Assim, o código se torna mais robusto, seguro e de fácil manutenção.
+    </p>
+
+    <p>
+        Além de proteger os dados, o encapsulamento também promove o <strong>princípio da responsabilidade única</strong>, onde cada classe é responsável apenas por seu próprio comportamento. Isso reduz a dependência entre os módulos do programa, facilitando futuras alterações. Por exemplo, se a lógica de cálculo de juros em uma conta bancária mudar, a alteração pode ser feita apenas dentro da classe <code>ContaBancaria</code>, sem afetar outras partes do sistema que usam essa classe.
+    </p>
+
+    <p>
+        Em linguagens como Java, C# e Python, o encapsulamento é implementado por meio de modificadores de acesso como <code>private</code>, <code>protected</code> e <code>public</code>. Esses modificadores determinam o que pode ou não ser acessado de fora da classe. Em Python, mesmo que não haja um controle tão rígido, usa-se a convenção de prefixar atributos com underline (<code>_atributo</code>) para indicar que são "privados", reforçando a ideia de que não devem ser acessados diretamente.
+    </p>
+
+    <p>
+        Em resumo, o encapsulamento é uma técnica poderosa que melhora a segurança e a organização do código em sistemas orientados a objetos. Ao proteger os dados sensíveis e expor apenas o necessário, ele ajuda a evitar erros, facilita a manutenção e melhora a legibilidade do programa. Programadores que dominam o encapsulamento conseguem construir sistemas mais coesos, flexíveis e preparados para evoluções futuras.
+    </p>
+    </main>
 </body>
 </html>

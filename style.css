@@ -18,7 +18,7 @@ a{
     border-radius: 50px;
 }
 
-#principal nav a:hover{
+nav a:hover{
     background-color: #ccc;
 }
 
